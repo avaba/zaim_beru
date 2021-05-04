@@ -1,0 +1,82 @@
+.popup
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	margin: auto
+	z-index: 12
+	max-width: 419px
+	width: 100%
+	height: max-content
+	opacity: 0
+	visibility: hidden
+	transition: all 0.3s ease
+	&.showed
+		opacity: 1
+		visibility: visible
+	&__container
+		background: #FFFFFF
+		box-shadow: 7px 10px 20px rgba(0, 0, 0, 0.06)
+		border-radius: 6px
+		margin: auto
+		padding: 43px 51px 38px
+		position: relative
+		text-align: center
+		.popup-close
+			position: absolute
+			top: -14px
+			right: -14px
+			cursor: pointer
+		.correct-tel
+			display: block
+			font-weight: 600
+			font-size: 26px
+			line-height: 120.9%
+			margin: 51px 0
+		.btn
+			width: 100%
+		.replace-slide-btn
+			display: block
+			margin-top: 30px
+			color: #818181
+			font-size: 20px
+			cursor: pointer
+			transition: all 0.3s ease
+			&:hover
+				color: #000000
+
+.overlay
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 11
+	background: rgba(0, 0, 0, 0.47)
+	opacity: 0
+	visibility: hidden
+	transition: all 0.3s ease
+	&.showed
+		opacity: 1
+		visibility: visible
+
+@media (max-width: 650px)
+	.popup
+		max-width: 271px
+		&__container
+			padding: 38px 27px 34px
+			.popup-close
+				top: -22px
+				right: -17px
+			h2
+				font-size: 16px
+			.correct-tel
+				font-size: 18px
+				margin: 23px 0
+			.btn
+				padding: 8px 20px
+				font-size: 16px
+			.replace-slide-btn
+				font-size: 16px
+				margin-top: 15px

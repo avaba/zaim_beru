@@ -1,0 +1,206 @@
+.footer-quiz__logo
+	margin-top: 40px
+.quiz
+	&__slide
+		&-calc
+			display: flex
+			justify-content: space-between
+			margin: 0 7px
+			.calc__item
+				width: 43%
+		&-personal
+			margin-top: 15px
+			h3
+				font-size: 22px
+	&__personal
+		margin-top: 35px
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		&.justify-content-start
+			.quiz__personal-item
+				width: 150px
+				&.quiz__personal-item
+					margin-right: 45px
+		&-label
+			display: block
+			font-size: 18px
+			margin-bottom: 23px
+		&-desc
+			margin-top: 12px
+			font-size: 12px
+		&-check
+			flex: 1 0 100%
+			color: #000000
+			input
+				display: none
+				&:checked
+					& + label
+						&::after
+							opacity: 1
+
+			label
+				display: flex
+				cursor: pointer
+				position: relative
+				font-size: 18px
+				line-height: 131.9%
+				width: 88%
+				&::before
+					content: ""
+					display: block
+					width: 32px
+					height: 32px
+					background: #F5F9FF
+					border-radius: 2px
+					border: 1px solid #F5F9FF
+					flex: 0 0 auto
+					margin-right: 26px
+					transform: translateY(-5px)
+				&::after
+					opacity: 0
+					content: ""
+					position: absolute
+					top: 5px
+					left: 7px
+					width: 19px
+					height: 15px
+					background: url("../images/dist/check.svg") no-repeat center center
+				&.invalid
+					&::before
+						border-color: red
+		&-btn
+			margin: auto
+			margin-top: 47px
+			&.text-center
+				margin-top: 0
+		&-item
+			width: 230px
+			margin-bottom: 34px
+			label
+				display: block
+				font-size: 18px
+				margin-bottom: 18px
+			&.full
+				width: 100%
+		&-input
+			background: #F5F9FF
+			border: 1px solid transparent
+			border-radius: 10px
+			padding: 16px 20px
+			color: #6A6A6A
+			outline: none
+			width: 100%
+			box-sizing: border-box
+			transition: color 0.3s ease
+			&.invalid
+				border-color: red
+	&__adress
+		position: relative
+		&-title
+			display: block
+			cursor: pointer
+		&-select
+			background: #fff
+			position: absolute
+			top: 53px
+			z-index: 2
+			left: 0
+			width: 100%
+			display: none
+			/* border: 1px solid #f5f9ff; */
+			box-shadow: 4px 7px 11px #0000000f
+			border-radius: 10px
+			box-sizing: border-box
+			.datacol-hint
+				ul
+					position: relative
+			&.active
+				display: block
+		&-search
+			width: 100%
+			margin: 8px 22px
+			margin-top: 13px
+			padding: 8px 22px
+			color: #6a6a6a
+			border: none
+			border-radius: 10px
+			background: #f5f9ff
+			width: 95%
+			-webkit-box-sizing: border-box
+			box-sizing: border-box
+
+.datacol-hint
+	position: relative
+	ul
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		list-style: none
+		background: white
+		z-index: 2
+		padding-left: 0
+		color: #6a6a6a
+		li
+			cursor: pointer
+			padding: 8px 22px
+			transition: background 0.3s ease
+			border-radius: 10px
+			&:hover
+				background: #f5f9ff
+
+.fact-adress
+	transition: all 0.3s ease
+
+@media (max-width: 930px)
+	.quiz__container
+		width: 98%
+		margin: auto
+
+@media (max-width: 650px)
+	.quiz
+		padding-top: 160px
+		margin-bottom: 0
+	.quiz__slide-calc
+		flex-wrap: wrap
+		.calc__item
+			width: 100%
+	.quiz__personal-item
+		width: 100%
+	.quiz__personal-btn
+		margin-top: 10px
+		width: 100%
+		.btn
+			font-size: 17px
+			width: 100%
+			box-sizing: border-box
+	.quiz__progress
+		font-size: 13px
+		margin-bottom: 15px
+		&-img
+			display: none
+		&-item
+			width: 30%
+	.quiz__container
+		padding: 25px 21px 35px
+	.quiz__slides
+		margin-top: 0
+	.quiz__personal-item label
+		font-size: 13px
+		margin-bottom: 9px
+	.quiz__personal-label
+		font-size: 13px
+		margin-bottom: 14px
+	.quiz__personal-check label
+		font-size: 13px
+		width: 100%
+		&::before
+			margin-right: 10px
+
+@media (max-width: 470px)
+	.quiz__personal.justify-content-start
+		flex-wrap: wrap
+	.quiz__personal.justify-content-start .quiz__personal-item.quiz__personal-item
+		width: 100%
+		margin-right: 0

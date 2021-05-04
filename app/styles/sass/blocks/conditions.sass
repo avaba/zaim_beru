@@ -1,0 +1,33 @@
+.conditions
+	&__block
+		margin-bottom: 50px
+		h3
+			font-size: 22px
+			margin-bottom: 30px
+		&-list
+			padding: 0
+			margin: 0
+			list-style: none
+			li
+				margin-bottom: 14px
+			a
+				color: #596AA5
+				position: relative
+				display: flex
+				align-items: center
+				white-space: nowrap
+				text-decoration: underline
+				&:before
+					content: ''
+					display: inline-block
+					width: 21px
+					height: 12px
+					margin-right: 9px
+					flex: 0 0 21px
+					background-image: url(../images/dist/pdf.svg)
+				&:hover
+					text-decoration: none
+
+@media (max-width: 757px)
+	.conditions__block
+		margin-bottom: 35px

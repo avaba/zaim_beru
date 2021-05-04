@@ -1,0 +1,66 @@
+.how-work
+	.section__title
+		margin-bottom: 42px
+		&__descr
+			text-align: center
+			font-size: 26px
+			margin-bottom: 100px
+			strong
+				color: $accent
+				font-weight: normal
+	&__item
+		border-radius: 10px
+		box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.04)
+		padding: 17px 17px 26px 23px
+		background: #fff
+		margin-bottom: 10px
+		position: relative
+		&-title
+			font-size: 20px
+			font-weight: 600
+			margin-bottom: 24px
+		p
+			margin: 0
+			font-size: 18px
+			font-weight: 300
+			line-height: 120.9%
+			strong
+				color: $accent
+				font-weight: 600
+		&-num
+			position: absolute
+			left: -46px
+			top: 50%
+			transform: translateY(-50%)
+			z-index: -1
+			font-size: 120px
+			font-weight: 600
+			font-family: 'Gilroy'
+			color: rgba(195, 195, 195, 0.2)
+		&__btn
+			margin-top: 30px
+
+@media (max-width: 991.98px)
+	.how-work
+		&__descr
+			text-align: center
+			margin-bottom: 46px
+		&__item
+			margin-bottom: 25px
+			text-align: center
+			&-num
+				display: none
+		.justify-content-around
+			flex-direction: column-reverse
+			align-items: center
+			margin-bottom: 30px
+
+@media (max-width: 575px)
+	.justify-content-around
+		img
+			width: 100%
+	.how-work
+		.section__title
+			margin-bottom: 20px
+		&__descr
+			font-size: 14px

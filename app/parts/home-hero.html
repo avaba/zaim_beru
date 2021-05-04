@@ -1,0 +1,73 @@
+<section class="home-hero">
+	<div class="container">
+		<h1 class="home-hero__title">Бесплатный подбор займа за <strong>5 минут</strong></h1>
+		<p class="home-hero__descr">Без проверок и справок. <br>С любой кредитной историей</p>
+		<div class="row justify-content-end">
+			<div class="col-md-5">
+				<div class="calc">
+					<h4 class="calc__title">Первый займ от <strong>0%</strong></h4>
+					<div class="calc__item">
+						<div class="calc__head">
+							<span class="calc__head-title">Размер займа</span>
+							<label class="calc__head-val">
+								<input id="sum-input" type="number" min="1000" max="100000" value="">
+								<span id="sum-val"></span> <span>₽</span>
+							</label>
+						</div>
+						<div id="sum"></div>
+						<div class="calc__variant">
+							<span class="calc__variant-item" data-sum="1000">1 000 ₽</span>
+							<span class="calc__variant-item" data-sum="50000">50 000 ₽</span>
+							<span class="calc__variant-item" data-sum="100000">100 000 ₽</span>
+						</div>
+					</div>
+					<div class="calc__item">
+						<div class="calc__head">
+							<span class="calc__head-title">Срок займа</span>
+							<span class="calc__head-val">
+								<input id="date-input" type="number" min="1" max="360" value="">
+								<span id="date-val"></span>
+								<span id="date-val-term"></span>
+							</span>
+						</div>
+						<div id="date"></div>
+						<div class="calc__variant">
+							<span class="calc__variant-item" data-date="1">1 день</span>
+							<span class="calc__variant-item" data-date="30">1 месяц</span>
+							<span class="calc__variant-item" data-date="365">1 год</span>
+						</div>
+					</div>
+					<span class="btn calc-btn">Оформить заявку</span>
+					<div class="calc-foot">
+						<div class="calc-foot__item">
+							<span class="calc-foot__item-title">Вы берете</span>
+							<span class="calc-foot__item-val"><span id="foot-sum"></span> ₽</span>
+						</div>
+						<div class="calc-foot__item">
+							<span class="calc-foot__item-title calc-foot__item-hint">К возврату
+								<span class="calc-foot__item-hintbody">
+									<span class="calc-foot__item-hintcircle">?</span>
+									<span class="calc-foot__item-hinttext">
+										<p>Расчет в калькуляторе основан на среднем
+											показателе процентной ставки кредитов РФ.
+											Расчет может отличаться от реальной ставки
+											по вашему микрозайму.</p>
+										<p>Расчет не является публичной офертой.</p>
+										<p>Займ “под 0%” возможен только при первом
+											обращении по кредитованию</p>
+									</span>
+								</span>
+							</span>
+							<span class="calc-foot__item-val"><span id="return-money">32 000</span> ₽</span>
+						</div>
+						<div class="calc-foot__item">
+							<span class="calc-foot__item-title">Дата возврата</span>
+							<span class="calc-foot__item-val" id="return-date"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<img class="home-hero__img" src="../images/dist/home-hero.png" alt="">
+</section>

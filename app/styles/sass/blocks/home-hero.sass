@@ -1,0 +1,56 @@
+.home-hero
+	padding-top: 91px
+	background: rgba(6, 157, 219, 1)
+	position: relative
+	overflow: hidden
+	padding-bottom: 75px
+	.container
+		position: relative
+	&__img
+		position: absolute
+		bottom: -63px
+		left: 50%
+		transform: translateX(-50%)
+		margin-left: -200px
+	&__title
+		text-align: center
+		color: rgba(253, 253, 253, 1)
+		font-size: 42px
+		font-weight: 400
+		position: relative
+		z-index: 1
+		margin-bottom: 8px
+		strong
+			font-weight: 400
+			color: $accent
+	&__descr
+		text-align: center
+		color: rgba(253, 253, 253, 1)
+		font-size: 26px
+		position: relative
+		z-index: 1
+		font-weight: 300
+		margin-bottom: 29px
+		br
+			display: none
+
+@media (max-width: 767px)
+	.home-hero
+		padding-top: 130px
+		padding-bottom: 44px
+		&__img
+			display: none
+		&__title
+			font-size: 28px
+			line-height: 34px
+		&__descr
+			font-size: 20px
+			line-height: 142.19%
+			margin-bottom: 45px
+			br
+				display: block
+
+@media (max-width: 575px)
+	.home-hero__descr
+		font-size: 16px
+		line-height: 142.19%

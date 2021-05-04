@@ -1,0 +1,105 @@
+.comment
+	background: #F9F9F9
+
+.comment-slider-video
+	padding: 50px 0
+	margin-bottom: 60px
+	.swiper-slide
+		width: 415px
+		opacity: 0.5
+		transition: all .3s
+		overflow: hidden
+		-webkit-border-radius: 5px
+		-moz-border-radius: 5px
+		border-radius: 5px
+		pointer-events: none
+		&.swiper-slide-active
+			opacity: 1
+			transition: all .3s
+			transform: scale(1.3)
+			pointer-events: auto
+	&__item
+		margin: auto
+		height: 285px
+		max-width: 415px
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: center
+		transition: all .3s
+		background-size: cover
+		background-position: center
+		img
+			transition: all .3s
+		&:hover
+			transition: all .3s
+			img
+				transition: all .3s
+				transform: scale(1.2)
+
+.comment-slider-text
+	margin-top: 40px
+	margin-bottom: 80px
+	padding: 20px 0
+	.swiper-slide
+		.comment-slider-text__item
+			max-width: 540px
+			width: 100%
+			opacity: 0.5
+			transition: all .3s
+			box-sizing: border-box
+			box-shadow: -2.83993px 4.73322px 7.57315px rgba(0, 0, 0, 0.07)
+			padding: 30px
+			-webkit-border-radius: 8px
+			-moz-border-radius: 8px
+			border-radius: 8px
+			background-color: #fff
+			background-image: url(../images/dist/citate.svg)
+			background-repeat: no-repeat
+			background-position: 50px 20px
+			pointer-events: none
+			margin: auto
+		&.swiper-slide-active
+			transition: all .3s
+			pointer-events: auto
+			.comment-slider-text__item
+				opacity: 1
+				transition: all .3s
+	&__item
+		&-name
+			font-style: italic
+			color: #898989
+			font-size: 13px
+			margin-top: 30px
+			margin-bottom: 0
+
+@media (max-width: 991.98px)
+	.comment-slider-video
+		margin-bottom: 20px
+	.comment-slider-video__item
+		height: 215px
+		border-radius: 6px
+	.comment-slider-text
+		margin-top: 20px
+		margin-bottom: 50px
+
+@media (max-width: 690px)
+	.comment-slider-video__item img
+		transform: scale(0.6)
+	.comment-slider-video__item:hover img
+		transform: scale(0.9)
+	.swiper-button-next, .swiper-button-prev
+		width: 22px
+		height: 22px
+	.comment-slider-video__item
+		width: 60%
+	.comment-slider-text .swiper-slide .comment-slider-text__item
+		font-size: 14px
+		line-height: 122.19%
+		padding: 30px 45px
+	.comment .text-center img
+		width: 100%
+
+@media (max-width: 540px)
+	.comment-slider-video__item
+		height: auto

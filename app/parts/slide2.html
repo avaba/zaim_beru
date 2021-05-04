@@ -1,0 +1,69 @@
+<div class="quiz__slide swiper-slide">
+	<div class="quiz__slide-container">
+		<h2 class="section__title">Заполнение анкетных данных</h2>
+		<form action="" class="slide2">
+			<div class="quiz__slide-personal">
+				<h3>Паспортные данные</h3>
+				<div class="quiz__personal justify-content-start">
+					<div class="quiz__personal-item">
+						<label>Серия паспорта</label>
+						<input type="text" name="ppt-serial" class="quiz__personal-input" id="ppt-serial" placeholder="11 11">
+					</div>
+					<div class="quiz__personal-item">
+						<label>Номер паспорта</label>
+						<input type="text" name="ppt-number" class="quiz__personal-input" placeholder="123456"
+							id="ppt-number">
+					</div>
+				</div>
+				<h3>Адрес</h3>
+				<div class="quiz__personal">
+					<div class="quiz__personal-item full">
+						<label>Адрес регистрации</label>
+						<div class="quiz__adress">
+							<span class="quiz__adress-title quiz__personal-input">Введите адрес регистрации</span>
+							<div class="quiz__adress-select">
+								<input type="hidden" name="reg-adress" class="quiz__asress-hidden">
+								<input type="text" class="quiz__adress-search quiz__data" data-attr="ADRESS"
+									placeholder="Введите адрес регистрации">
+								<div class="datacol-hint">
+									<ul></ul>
+								</div>
+							</div>
+						</div>
+						<p class="quiz__personal-desc">Нужно ввести полный адрес, включая дом и квартиру (если есть).
+							Например:
+							г. Москва, ул. Пролетарская,
+							д. 11, кв. 15</p>
+					</div>
+					<div class="quiz__personal-check">
+						<span class="quiz__personal-label">Фактический адрес</span>
+						<input type="checkbox" id="registr">
+						<label for="registr">
+							Совпадает с адресом регистрации
+						</label>
+					</div>
+					<div class="quiz__personal-item full fact-adress">
+						<div class="quiz__adress">
+							<span class="quiz__adress-title quiz__personal-input">Введите адрес проживания</span>
+							<div class="quiz__adress-select">
+								<input type="hidden" name="fact-adress" class="quiz__asress-hidden">
+								<input type="text" class="quiz__adress-search quiz__data" data-attr="ADRESS"
+									placeholder="Введите адрес проживания">
+								<div class="datacol-hint">
+									<ul></ul>
+								</div>
+							</div>
+						</div>
+						<p class="quiz__personal-desc">Нужно ввести полный адрес, включая дом и квартиру (если есть).
+							Например:
+							г. Москва, ул. Пролетарская,
+							д. 11, кв. 15</p>
+					</div>
+				</div>
+				<div class="quiz__personal-btn text-center">
+					<span class="next-slide-btn btn">Подобрать предложение</span>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>

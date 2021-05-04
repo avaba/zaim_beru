@@ -1,0 +1,35 @@
+.requirements
+	background: #F9F9F9
+	padding-bottom: 50px
+	&__item
+		text-align: center
+		display: flex
+		flex-direction: column
+		align-items: center
+		margin-bottom: 30px
+		&-img
+			background: #21A4D9
+			border-radius: 8px
+			width: 121px
+			height: 126px
+			display: flex
+			align-items: center
+			justify-content: center
+			margin-bottom: 40px
+		&-text
+			font-size: 20px
+			line-height: 120.9%
+
+@media (max-width: 575px)
+	.requirements
+		&__item
+			&:last-child
+				margin-bottom: 0
+			&-img
+				margin-bottom: 21px
+				width: 72px
+				height: 77px
+				img
+					width: 50%
+			&-text
+				font-size: 16px

@@ -1,0 +1,118 @@
+<div class="quiz__slide swiper-slide">
+	<div class="quiz__slide-container">
+		<h2 class="section__title">Заполнение анкетных данных</h2>
+		<form action="" class="slide1" method="POST">
+			<div class="quiz__slide-calc">
+				<div class="calc__item">
+					<div class="calc__head">
+						<span class="calc__head-title">Размер займа</span>
+						<label class="calc__head-val">
+							<input id="sum-input" name="sum-input" type="number" min="1000" max="100000" value="">
+							<span id="sum-val"></span> <span>₽</span>
+						</label>
+					</div>
+					<div id="sum"></div>
+					<div class="calc__variant">
+						<span class="calc__variant-item" data-sum="1000">1 000 ₽</span>
+						<span class="calc__variant-item" data-sum="50000">50 000 ₽</span>
+						<span class="calc__variant-item" data-sum="100000">100 000 ₽</span>
+					</div>
+				</div>
+				<div class="calc__item">
+					<div class="calc__head">
+						<span class="calc__head-title">Срок займа</span>
+						<span class="calc__head-val">
+							<input id="date-input" name="date-input" type="number" min="1" max="360" value="">
+							<span id="date-val"></span>
+							<span id="date-val-term"></span>
+						</span>
+					</div>
+					<div id="date"></div>
+					<div class="calc__variant">
+						<span class="calc__variant-item" data-date="1">1 день</span>
+						<span class="calc__variant-item" data-date="30">1 месяц</span>
+						<span class="calc__variant-item" data-date="365">1 год</span>
+					</div>
+				</div>
+				<div class="calc-foot" style="display: none;">
+					<div class="calc-foot__item">
+						<span class="calc-foot__item-title">Вы берете</span>
+						<span class="calc-foot__item-val"><span id="foot-sum"></span> ₽</span>
+					</div>
+					<div class="calc-foot__item">
+						<span class="calc-foot__item-title calc-foot__item-hint">К возврату</span>
+						<span class="calc-foot__item-val"><span id="return-money">32 000</span> ₽</span>
+					</div>
+					<div class="calc-foot__item">
+						<span class="calc-foot__item-title">Дата возврата</span>
+						<span class="calc-foot__item-val" id="return-date"></span>
+					</div>
+				</div>
+			</div>
+			<div class="quiz__slide-personal">
+				<h3>Персональные данные</h3>
+				<div class="quiz__personal">
+					<div class="quiz__personal-item">
+						<label>Фамилия</label>
+						<input type="text" class="quiz__personal-input quiz__data" name="surname" data-attr="SURNAME"
+							id="fname" placeholder="Антипов">
+						<div class="datacol-hint">
+							<ul></ul>
+						</div>
+					</div>
+					<div class="quiz__personal-item">
+						<label>Имя</label>
+						<input type="text" class="quiz__personal-input quiz__data" name="lname" data-attr="NAME"
+							placeholder="Петр">
+						<div class="datacol-hint">
+							<ul></ul>
+						</div>
+					</div>
+					<div class="quiz__personal-item">
+						<label>Отчество</label>
+						<input type="text" class="quiz__personal-input quiz__data" name="patronymic" data-attr="PATRONYMIC"
+							placeholder="Сергеевич">
+						<div class="datacol-hint">
+							<ul></ul>
+						</div>
+					</div>
+					<div class="quiz__personal-item">
+						<label>Дата рождения</label>
+						<input type="text" data-count="10" id="dirthday" class="quiz__personal-input" name="birthday"
+							placeholder="11.11.2011">
+					</div>
+					<div class="quiz__personal-item">
+						<label>Электронный адрес</label>
+						<input type="email" class="quiz__personal-input quiz__data" id="email" name="email" data-attr="EMAIL"
+							placeholder="antipovp@gmail.com">
+						<div class="datacol-hint">
+							<ul></ul>
+						</div>
+					</div>
+					<div class="quiz__personal-item">
+						<label>Номер телефона</label>
+						<input type="tel" id="tel" class="quiz__personal-input" data-count="18" name="phone"
+							placeholder="+7 (911) 111-11-11">
+					</div>
+					<div class="quiz__personal-check">
+						<input type="checkbox" id="go_serv">
+						<label for="go_serv">
+							Согласен на предоставление услуг
+						</label>
+					</div>
+					<div class="quiz__personal-check">
+						<input type="checkbox" id="polit">
+						<label for="polit">
+							Ознакомлен с политий обработки
+							рекламных данных и публичной оферты, а так же на получение
+							материалов с предложениями услуг банка
+						</label>
+					</div>
+					<div class="quiz__personal-btn">
+						<span class="popup-btn btn" data-popup="tel">Продолжить</span>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>

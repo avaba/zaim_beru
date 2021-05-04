@@ -1,0 +1,63 @@
+// USER VARIABLES SECTION
+
+$accent: #FF9029
+// Accent Color
+$fontSize: 16px
+// Body Font Size
+$textColor: #181818
+// Text Color
+$lineHeight: 1.2
+// Document Line Height
+$userFont: 'Nunito', sans-serif
+// User Font Family
+$systemFont: -apple-system, BlinkMacSystemFont, Arial, sans-serif
+// System Font Family
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 30px
+$gutter: $grid-gutter-width
+
+// IMPORT SECTION
+
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss'
+// Bootstrap Reboot collection
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss'
+// Bootstrap Breakpoints mixin
+@import 'node_modules/bootstrap/scss/bootstrap-grid.scss'
+// Optional Bootstrap Grid
+// @import 'node_modules/bootstrap/scss/utilities/_sizing.scss' // Optional Bootstrap Utilites
+
+// FONTS LOAD SECTION
+@import '../../fonts/nunito/nunito.css'
+@import '../../fonts/Gilroy/stylesheet.css'
+
+// PLUGINS
+@import '../../libs/swiper/css/swiper.css'
+@import '../../libs/noUiSlider/distribute/nouislider.css'
+
+// GENERAL DOCUMENT STYLES
+
+::placeholder
+  color: #666
+
+::selection
+  background-color: $accent
+  color: #fff
+
+input, textarea
+  outline: none
+
+  &:focus:required:invalid
+    border-color: red
+
+  &:required:valid
+    border-color: green
+
+body
+  font-family: $userFont
+  font-size: $fontSize
+  line-height: $lineHeight
+  color: $textColor
+  min-width: 320px
+  position: relative
+  overflow-x: hidden

@@ -1,0 +1,79 @@
+// GENERAL PROJECT STYLES
+
+body
+	&.inside
+		background: #F9F9F9
+
+.text-center
+	text-align: center
+
+.text-left
+	text-align: left
+
+.text-right
+	text-align: right
+
+.section
+	padding: 80px 0
+	&__title
+		text-align: center
+		margin-bottom: 70px
+		font-size: 40px
+		color: #181818
+		font-weight: normal
+
+.btn
+	display: inline-block
+	background: linear-gradient(164.69deg, #FF9D42 -98.34%, #FF8311 149.29%)
+	color: #fff
+	padding: 15px 50px
+	font-size: 20px
+	border-radius: 5px
+	transition: all .2s
+	text-align: center
+	cursor: pointer
+	&:hover
+		color: #fff
+		text-decoration: none
+		opacity: .8
+		transition: all .2s
+
+.swiper-button-next, .swiper-button-prev
+	width: 34px
+	height: 34px
+	-webkit-border-radius: 100%
+	-moz-border-radius: 100%
+	border-radius: 100%
+	background-color: $accent
+	background-size: auto
+
+.swiper-button-next
+	background-image: url('../images/dist/next.svg')
+	right: 50%
+	margin-right: -20%
+
+.swiper-button-prev
+	background-image: url('../images/dist/prev.svg')
+	left: 50%
+	margin-left: -20%
+
+@media (max-width: 991.96px)
+	.swiper-button-next
+		margin-right: -47%
+	.swiper-button-prev
+		margin-left: -47%
+
+@media (max-width: 767px)
+	.section
+		padding: 40px 0
+	.btn
+		font-size: 18px
+		line-height: 142.19%
+		padding: 15px 30px
+
+@media (max-width: 575px)
+	.section
+		&__title
+			font-size: 26px
+			line-height: 122.19%
+			margin-bottom: 30px

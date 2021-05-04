@@ -1,0 +1,212 @@
+.calc
+	background: #FFFFFF
+	padding: 30px
+	-webkit-border-radius: 6px
+	-moz-border-radius: 6px
+	border-radius: 6px
+	position: relative
+	z-index: 2
+	&__title
+		color: #181818
+		text-align: center
+		font-size: 30px
+		font-weight: 600
+		margin-bottom: 22px
+		strong
+			color: $accent
+			font-weight: 600
+	&__item
+		margin-bottom: 30px
+		&:last-of-type
+			margin-bottom: 37px
+	&__head
+		display: flex
+		align-items: center
+		justify-content: space-between
+		&-title
+			font-size: 13px
+			color: rgba(24, 24, 24, 0.6)
+		&-val
+			margin: 15px 0
+			font-size: 26px
+			color: #181818
+			position: relative
+			width: 140px
+			text-align: right
+			&:hover
+				color: $accent
+			#sum-input,
+			#date-input
+				position: absolute
+				right: 21px
+				top: 0px
+				display: inline-block
+				width: 100%
+				background: none
+				border: none
+				-moz-appearance: textfield
+				padding: 0
+				opacity: 0
+				text-align: right
+				&::-webkit-outer-spin-button,
+				&::-webkit-inner-spin-button
+					-webkit-appearance: none
+				&:focus
+					opacity: 1
+					color: $accent
+					&+#sum-val,
+					&+#date-val
+						opacity: 0
+						&+span
+							color: $accent
+			#date-input
+				padding-right: 64px
+				transform: translateX(20px)
+	&__variant
+		display: flex
+		justify-content: center
+		margin-top: 15px
+		position: relative
+		z-index: 1
+		&-item
+			font-size: 11px
+			color: #181818
+			cursor: pointer
+			flex: 1
+			&:nth-of-type(1)
+				text-align: left
+			&:nth-of-type(2)
+				text-align: center
+			&:nth-of-type(3)
+				text-align: right
+	.btn
+		display: block
+
+.calc-foot
+	margin: 40px -50px -30px -50px
+	background: #F8F8F8
+	padding: 30px 50px
+	border-radius: 0 0 6px 6px
+	&__item
+		display: flex
+		justify-content: space-between
+		margin-bottom: 6px
+		align-items: center
+		&:last-of-type
+			margin-bottom: 0
+		&-title
+			font-size: 14px
+			color: rgba(24, 24, 24, 0.6)
+			span
+				font-size: 11px
+		&-val
+			font-size: 15px
+			color: #181818
+		&-hint
+			display: flex
+			align-items: center
+		&-hintbody
+			position: relative
+			&:hover .calc-foot__item-hinttext
+				opacity: 1
+				visibility: visible
+		&-hintcircle
+			cursor: pointer
+			width: 16px
+			height: 16px
+			border-radius: 100%
+			margin-left: 10px
+			background: linear-gradient(0deg, rgba(255, 255, 255, 0.23), rgba(255, 255, 255, 0.23)), linear-gradient(164.69deg, #FF9D42 -98.34%, #FF8311 149.29%)
+			color: white
+			font-size: 10px!important
+			text-align: center
+			flex: 1 0 auto
+			display: flex
+			align-items: center
+			justify-content: center
+		&-hinttext
+			background: #FFFFFF
+			box-shadow: 7px 10px 20px rgba(0, 0, 0, 0.06)
+			border-radius: 8px
+			padding: 13px 25px
+			position: absolute
+			top: -76px
+			right: 37px
+			opacity: 0
+			visibility: hidden
+			transition: all 0.3s ease
+			width: 334px
+			p
+				font-size: 13px
+				&:last-child
+					margin-bottom: 0
+			&::before
+				content: ""
+				position: absolute
+				right: -40px
+				top: 37%
+				border: 20px solid transparent
+				border-left: 20px solid #fff
+				z-index: +2
+
+.noUi-horizontal
+	height: 3px
+	border-radius: 0
+	background: rgba(196, 196, 196, 0.62)
+	border: 0
+	box-shadow: none
+
+.noUi-connect
+	background: $accent
+
+.noUi-horizontal .noUi-handle
+	width: 13px
+	height: 13px
+	border: 0
+	box-shadow: none
+	background: $accent
+	right: -6.5px
+	border-radius: 50%
+	top: -5px
+	&::before, &::after
+		display: none
+
+@media (min-width: 1200px)
+	.calc
+		padding: 30px 50px
+
+@media (max-width: 1200px)
+	.calc
+		&-foot
+			margin: 40px -30px -30px
+			padding: 30px 30px
+
+@media (max-width: 767px)
+	.calc
+		display: flex
+		flex-direction: column
+		.btn
+			order: 1
+			font-size: 18px
+	    line-height: 142.19%
+		&-foot
+			margin: 10px -30px 0
+			background: #ffffff
+			padding-bottom: 41px
+			&__item
+				&-hinttext
+					top: 30px
+					right: auto
+					left: -101px
+					&::before
+						border-left: 20px solid transparent
+						right: 56%
+						top: -27px
+						border-bottom: 20px solid white
+
+@media (max-width: 366px)
+	.calc-foot__item-hinttext
+		left: -110px
+		width: 96vw
+		p
+			font-size: 12px

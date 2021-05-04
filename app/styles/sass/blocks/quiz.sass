@@ -1,0 +1,71 @@
+.quiz
+	max-width: 910px
+	width: 100%
+	margin: auto
+	padding-top: 220px
+	margin-bottom: 90px
+	&__container
+		padding: 51px 50px 62px
+		background: white
+		box-shadow: 4px 7px 11px rgba(0, 0, 0, 0.06)
+		border-radius: 10px
+		.text-center
+			img
+				width: 100%
+				opacity: 0.5
+	&__progress
+		font-size: 22px
+		line-height: 131.9%
+		text-align: center
+		display: flex
+		justify-content: space-between
+		margin-bottom: 54px
+		&-img
+			object-fit: contain
+		&-item
+			width: 134px
+			position: relative
+			p
+				margin-bottom: 0
+				padding-bottom: 16px
+
+		&-bar
+			content: ""
+			position: absolute
+			bottom: 0
+			left: 0
+			right: 0
+			background: #C7C7C7
+			border-radius: 2px
+			height: 5px
+			&:before
+				content: ""
+				position: absolute
+				bottom: 0
+				left: 0
+				width: 0
+				height: 5px
+				background: #FF8A1D
+				box-shadow: 0px 0px 6px rgba(255, 138, 29, 0.1)
+				border-radius: 2px
+				transition: width 0.3s ease
+			&.start
+				&::before
+					width: 50%
+			&.all
+				&::before
+					width: 100%
+	&__slider
+		overflow-y: visible
+		&::-webkit-scrollbar
+			width: 0
+
+	&__slides
+		margin-top: 44px
+	&__slide
+		&-container
+			margin: 0px 8px
+
+@media (max-width: 821px)
+	.quiz__slider
+		overflow-y: hidden
